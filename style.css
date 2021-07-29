@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.background {
+  width: 100vw;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 1000px;
+  height: 100vh;
+  width: 2px;
+  background-color: rgb(214, 25, 25);
+  z-index: 3;
+  cursor: grab;
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 1000px;
+  background-image: url(img/tree.jpg);
+  background-size: 100vw;
+  filter: grayscale(80%);
+  z-index: 2;
+}
+
+header {
+  font-family: 'Lato', sans-serif;
+  font-size: 4.5em;
+  color: white;
+  text-shadow: 1px 2px 2px rgb(201, 201, 201);
+  position: absolute;
+  left: calc(50% - 120px);
+  top: calc(50% - 43px);
+}
